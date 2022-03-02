@@ -13,6 +13,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'joshdick/onedark.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'vim-airline/vim-airline'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 " Display settings
@@ -28,4 +30,5 @@ set hlsearch
 set incsearch
 
 " Key mappings
-nnoremap <esc><esc> :silent! nohls<cr>
+nnoremap <esc><esc> :silent! nohls<Cr>
+nnoremap <C-p> :Files<Cr>
