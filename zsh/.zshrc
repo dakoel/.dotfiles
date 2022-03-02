@@ -9,4 +9,4 @@ ZSH_THEME="robbyrussell"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
-export FZF_DEFAULT_COMMAND="find -L ."
+export FZF_DEFAULT_COMMAND="find -L . -not -path '*/\.git/*'"

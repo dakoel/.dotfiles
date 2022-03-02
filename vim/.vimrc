@@ -31,4 +31,4 @@ set incsearch
 
 " Key mappings
 nnoremap <esc><esc> :silent! nohls<Cr>
-nnoremap <C-p> :Files<Cr>
+nnoremap <C-f> :Files<Cr>
