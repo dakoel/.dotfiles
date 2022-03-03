@@ -29,6 +29,10 @@ set ignorecase
 set hlsearch
 set incsearch
 
+" netrw settings
+let g:netrw_banner=0
+let g:netrw_liststyle=3
+
 " Key mappings
 nnoremap <esc><esc> :silent! nohls<Cr>
 nnoremap <C-f> :Files<Cr>
