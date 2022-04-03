@@ -21,6 +21,7 @@ call plug#end()
 syntax on
 silent! colorscheme onedark
 set number
+set relativenumber
 set cursorline
 set nowrap
 
@@ -41,3 +42,8 @@ let g:netrw_liststyle=3
 " Key mappings
 nnoremap <esc><esc> :silent! nohls<Cr>
 nnoremap <C-f> :Files<Cr>
+
+" File type specific settings
+" html
+autocmd FileType html set shiftwidth=2
+autocmd FileType html set tabstop=2
