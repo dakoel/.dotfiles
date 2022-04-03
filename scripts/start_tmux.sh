@@ -12,7 +12,7 @@ tmux rename-window ide
 tmux split-window -v -p 20
 tmux select-pane -t 1
 
-if ! [ -x "$(command -v htop)" ]
+if [ -x "$(command -v htop)" ]
 then
     tmux new-window 'htop'
 fi
