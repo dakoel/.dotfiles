@@ -47,3 +47,7 @@ nnoremap <C-f> :Files<Cr>
 " html
 autocmd FileType html set shiftwidth=2
 autocmd FileType html set tabstop=2
+
+" css
+autocmd FileType css set shiftwidth=2
+autocmd FileType css set tabstop=2
