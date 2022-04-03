@@ -29,6 +29,11 @@ set ignorecase
 set hlsearch
 set incsearch
 
+" Tabs and indentation settings
+set expandtab
+set shiftwidth=4
+set tabstop=4
+
 " netrw settings
 let g:netrw_banner=0
 let g:netrw_liststyle=3
