@@ -1,5 +1,5 @@
 #!/bin/sh
-if ! command -v tmux &> /dev/null
+if ! [ -x "$(command -v tmux)" ]
 then
     >&2 echo "command not found: tmux"
     exit
@@ -12,7 +12,7 @@ tmux rename-window ide
 tmux split-window -v -p 20
 tmux select-pane -t 1
 
-if command -v htop &> /dev/null
+if ! [ -x "$(command -v htop)" ]
 then
     tmux new-window 'htop'
 fi
