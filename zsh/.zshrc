@@ -4,4 +4,5 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Aliases
+alias vim="nvim"
 alias start_tmux="~/.dotfiles/scripts/start_tmux.sh"
