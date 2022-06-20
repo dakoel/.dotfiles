@@ -20,3 +20,6 @@ vim.keymap.set("n", "<Leader>fc", "<Cmd>Telescope commands<CR>")
 
 -- nvim-tree
 vim.keymap.set("n", "_", "<Cmd>NvimTreeToggle<CR>")
+
+-- LSP
+-- Note that in "lsp.lua" also keybindings are set
