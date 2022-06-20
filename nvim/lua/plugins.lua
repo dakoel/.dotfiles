@@ -26,6 +26,7 @@ require("packer").startup(function(use)
     }
   },
   use "windwp/nvim-autopairs",
+  use { "sindrets/diffview.nvim", requires = "nvim-lua/plenary.nvim" }
 }
 end)
 
@@ -35,3 +36,4 @@ require("nvim-tree").setup()
 require("plugins/treesitter")
 require("plugins/lualine")
 require("nvim-autopairs").setup()
+require("diffview").setup()
