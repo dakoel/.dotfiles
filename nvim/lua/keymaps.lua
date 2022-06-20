@@ -9,8 +9,8 @@ vim.keymap.set("n", "<ESC><ESC>", ":silent! nohls<CR>")
 vim.keymap.set("n", "<Leader>tt", "<Cmd>terminal<CR>")
 vim.keymap.set("n", "<Leader>th", "<Cmd>split | terminal<CR>")
 vim.keymap.set("n", "<Leader>tv", "<Cmd>vsplit | terminal<CR>")
-vim.cmd('autocmd TermOpen * tnoremap <ESC> <C-\\><C-n>')
-vim.cmd('autocmd TermOpen * tnoremap jk <C-\\><C-n>')
+vim.cmd("autocmd TermOpen * tnoremap <ESC> <C-\\><C-n>")
+vim.cmd("autocmd TermOpen * tnoremap jk <C-\\><C-n>")
 
 -- Telescope
 vim.keymap.set("n", "<Leader>ff", "<Cmd>Telescope find_files<CR>")

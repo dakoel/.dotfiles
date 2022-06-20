@@ -18,4 +18,4 @@ vim.o.shiftwidth = 4
 vim.o.tabstop = 4
 
 -- Terminal
-vim.cmd('autocmd TermOpen * setlocal nonumber norelativenumber')
+vim.cmd("autocmd TermOpen * setlocal nonumber norelativenumber")
