@@ -1,10 +1,3 @@
 require("nvim-lsp-installer").setup{}
-require("lspconfig").sumneko_lua.setup{
-  settings = {
-    Lua = {
-      diagnostics = {
-        globals = { "vim" }
-      }
-    }
-  }
-}
+require("lspconfig").sumneko_lua.setup{}
+require("lspconfig").dartls.setup{}
