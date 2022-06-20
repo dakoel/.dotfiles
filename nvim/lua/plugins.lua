@@ -35,7 +35,7 @@ end)
 
 require("plugins/lsp")
 require("plugins/cmp")
-require("nvim-tree").setup()
+require("plugins/nvim-tree")
 require("plugins/treesitter")
 require("plugins/lualine")
 require("nvim-autopairs").setup()
