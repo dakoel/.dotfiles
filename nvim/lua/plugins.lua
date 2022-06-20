@@ -24,7 +24,8 @@ require("packer").startup(function(use)
       "kyazdani42/nvim-web-devicons",
       opt = true
     }
-}
+  },
+  use "windwp/nvim-autopairs",
 }
 end)
 
@@ -33,3 +34,4 @@ require("plugins/cmp")
 require("nvim-tree").setup()
 require("plugins/treesitter")
 require("plugins/lualine")
+require("nvim-autopairs").setup()
