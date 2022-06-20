@@ -17,7 +17,14 @@ require("packer").startup(function(use)
   use {
     "nvim-treesitter/nvim-treesitter",
     run = ':TSUpdate'
-  }
+  },
+  use {
+    "nvim-lualine/lualine.nvim",
+    requires = {
+      "kyazdani42/nvim-web-devicons",
+      opt = true
+    }
+}
 }
 end)
 
@@ -25,3 +32,4 @@ require("plugins/lsp")
 require("plugins/cmp")
 require("nvim-tree").setup()
 require("plugins/treesitter")
+require("plugins/lualine")
