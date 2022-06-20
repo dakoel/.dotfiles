@@ -30,6 +30,7 @@ require("packer").startup(function(use)
   use { "sindrets/diffview.nvim", requires = "nvim-lua/plenary.nvim" }
   use "davidgranstrom/nvim-markdown-preview"
   use "lukas-reineke/indent-blankline.nvim"
+  use "mfussenegger/nvim-dap"
 end)
 
 require("plugins/lsp")

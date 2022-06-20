@@ -23,3 +23,9 @@ vim.keymap.set("n", "_", "<Cmd>NvimTreeToggle<CR>")
 
 -- LSP
 -- Note that in "lsp.lua" also keybindings are set
+
+-- nvim-dap
+vim.keymap.set("n", "tb", function() require("dap").toggle_breakpoint() end)
+vim.keymap.set("n", "<leader>dd", function() require("dap").continue() end)
+vim.keymap.set("n", "<leader>dc", function() require("dap").terminate() end)
+vim.keymap.set("n", "<leader>d?", function() local widgets=require"dap.ui.widgets";widgets.centered_float(widgets.scopes) end)
