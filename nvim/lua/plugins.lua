@@ -29,6 +29,7 @@ require("packer").startup(function(use)
   use "windwp/nvim-autopairs"
   use { "sindrets/diffview.nvim", requires = "nvim-lua/plenary.nvim" }
   use "davidgranstrom/nvim-markdown-preview"
+  use "lukas-reineke/indent-blankline.nvim"
 end)
 
 require("plugins/lsp")
@@ -38,3 +39,4 @@ require("plugins/treesitter")
 require("plugins/lualine")
 require("nvim-autopairs").setup()
 require("diffview").setup()
+require("indent_blankline").setup()
