@@ -9,9 +9,14 @@ require("packer").startup(function(use)
   use "hrsh7th/nvim-cmp"
   use {
     "nvim-telescope/telescope.nvim",
-    requires = { {"nvim-lua/plenary.nvim"} }
+    requires = {"nvim-lua/plenary.nvim"}
   }
+  use {
+    "kyazdani42/nvim-tree.lua",
+    requires = {"kyazdani42/nvim-web-devicons"}
+}
 end)
 
 require("plugins/lsp")
 require("plugins/cmp")
+require("nvim-tree").setup()
