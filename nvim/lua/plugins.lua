@@ -7,42 +7,19 @@ require("packer").startup(function(use)
   use "hrsh7th/cmp-nvim-lsp"
   use "hrsh7th/cmp-buffer"
   use "hrsh7th/nvim-cmp"
-  use {
-    "nvim-telescope/telescope.nvim",
-    requires = {"nvim-lua/plenary.nvim"}
-  }
-  use {
-    "kyazdani42/nvim-tree.lua",
-    requires = {"kyazdani42/nvim-web-devicons"}
-  }
+  use "nvim-lua/plenary.nvim" -- Needed by telescope and diffview
+  use "kyazdani42/nvim-web-devicons" -- Needed by nvim-tree, lualine and bufferline
+  use "nvim-telescope/telescope.nvim"
+  use "kyazdani42/nvim-tree.lua"
   use {
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate"
   }
-  use {
-    "nvim-lualine/lualine.nvim",
-    requires = {
-      "kyazdani42/nvim-web-devicons",
-      opt = true
-    }
-  }
+  use "nvim-lualine/lualine.nvim"
   use "windwp/nvim-autopairs"
-  use { "sindrets/diffview.nvim", requires = "nvim-lua/plenary.nvim" }
+  use "sindrets/diffview.nvim"
   use "davidgranstrom/nvim-markdown-preview"
   use "lukas-reineke/indent-blankline.nvim"
   use "mfussenegger/nvim-dap"
-  use {
-    "akinsho/bufferline.nvim",
-    requires = "kyazdani42/nvim-web-devicons"
-  }
+  use "akinsho/bufferline.nvim"
 end)
-
-require("plugins/lsp")
-require("plugins/cmp")
-require("plugins/nvim-tree")
-require("plugins/treesitter")
-require("plugins/lualine")
-require("nvim-autopairs").setup()
-require("diffview").setup()
-require("indent_blankline").setup()
-require("plugins/bufferline")
