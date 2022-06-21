@@ -31,6 +31,10 @@ require("packer").startup(function(use)
   use "davidgranstrom/nvim-markdown-preview"
   use "lukas-reineke/indent-blankline.nvim"
   use "mfussenegger/nvim-dap"
+  use {
+    "akinsho/bufferline.nvim",
+    requires = "kyazdani42/nvim-web-devicons"
+  }
 end)
 
 require("plugins/lsp")
@@ -41,3 +45,4 @@ require("plugins/lualine")
 require("nvim-autopairs").setup()
 require("diffview").setup()
 require("indent_blankline").setup()
+require("plugins/bufferline")
