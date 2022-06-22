@@ -2,9 +2,11 @@
 vim.g.mapleader = " "
 
 -- Basic configuration
+vim.keymap.set("n", "<CR>", ":")
 vim.keymap.set("i", "jk", "<ESC>")
 vim.keymap.set("n", "<ESC><ESC>", ":silent! nohls<CR>")
-vim.keymap.set("n", "<C-x>", ":bd<CR>")
+vim.keymap.set("n", "<Leader>xb", ":bdelete<CR>")
+vim.keymap.set("n", "<Leader>xt", ":tabclose<CR>")
 
 -- Terminal
 vim.keymap.set("n", "<Leader>tt", "<Cmd>terminal<CR>")
