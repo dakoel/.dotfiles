@@ -1,6 +1,7 @@
 require("options")
 require("commands")
-require("keymaps")
+require("keymaps_normal")
+require("keymaps_insert")
 require("plugins")
 require("plugins/lsp")
 require("plugins/cmp")

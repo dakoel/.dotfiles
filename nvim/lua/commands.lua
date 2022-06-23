@@ -1,3 +1,3 @@
--- Diffview
+-- diffview
 vim.cmd("command! GitHistory DiffviewFileHistory %")
 vim.cmd("command! GitDiff DiffviewOpen")

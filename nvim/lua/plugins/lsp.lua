@@ -1,6 +1,7 @@
 require("nvim-lsp-installer").setup {}
 
-require("lspconfig").sumneko_lua.setup {
+local lspconfig = require("lspconfig")
+lspconfig.sumneko_lua.setup {
   settings = {
     Lua = {
       diagnostics = {
@@ -9,4 +10,4 @@ require("lspconfig").sumneko_lua.setup {
     }
   }
 }
-require("lspconfig").dartls.setup({})
+lspconfig.dartls.setup({})
