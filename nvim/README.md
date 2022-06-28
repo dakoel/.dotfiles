@@ -3,6 +3,7 @@
 ## Requirements
 
 - Neovim >= 0.7.0
+- [packer](https://github.com/wbthomason/packer.nvim)
 - Some plugins may require the setting of a special font in the terminal to display icons. I recommend the use of [Hack Nerd Font](https://www.nerdfonts.com/).
 
 ## Plugins used
