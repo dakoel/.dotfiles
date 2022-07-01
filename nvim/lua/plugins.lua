@@ -6,6 +6,7 @@ require("packer").startup(function(use)
   use "hrsh7th/vim-vsnip-integ"
   use "hrsh7th/cmp-nvim-lsp"
   use "hrsh7th/cmp-buffer"
+  use "hrsh7th/cmp-path"
   use "hrsh7th/nvim-cmp"
   use "nvim-lua/plenary.nvim" -- Needed by telescope and diffview
   use "kyazdani42/nvim-web-devicons" -- Needed by nvim-tree, lualine and bufferline

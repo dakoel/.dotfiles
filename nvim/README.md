@@ -10,6 +10,7 @@
 
 - [bufferline](https://github.com/akinsho/bufferline.nvim)
 - [cmp-buffer](https://github.com/sar/cmp-buffer.nvim)
+- [cmp-path](https://github.com/hrsh7th/cmp-path)
 - [cmp-nvim-lsp](https://github.com/sar/cmp-lsp.nvim)
 - [diffview](https://github.com/sindrets/diffview.nvim)
 - [indent-blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
