@@ -2,6 +2,9 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="lukerandall"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
+bindkey -v
+bindkey -M viins 'jk' vi-cmd-mode
+bindkey "^R" history-incremental-search-backward
 
 # Aliases
 alias vim="nvim"
