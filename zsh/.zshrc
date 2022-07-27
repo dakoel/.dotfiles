@@ -7,6 +7,7 @@ bindkey -M viins 'jk' vi-cmd-mode
 bindkey "^R" history-incremental-search-backward
 
 # Aliases
+alias sudo="sudo "
 alias vim="nvim"
 alias reboot="systemctl reboot"
 alias poweroff="systemctl poweroff"
