@@ -1,6 +1,9 @@
 require("bufferline").setup({
   options = {
-    indicator_icon = ' >',
+    indicator = {
+      style = 'icon',
+      icon = ' >'
+    },
     show_buffer_close_icons = false,
     show_close_icon = false,
     diagnostics = "nvim_lsp",
