@@ -1,10 +1,15 @@
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="lukerandall"
-plugins=(git)
+plugins=(git zsh-vi-mode)
+
+function zvm_config() {
+  ZVM_LINE_INIT_MODE=$ZVM_MODE_INSERT
+  ZVM_VI_INSERT_ESCAPE_BINDKEY=jk
+  ZVM_NORMAL_MODE_CURSOR=$ZVM_CURSOR_BLINKING_BLOCK
+  ZVM_INSERT_MODE_CURSOR=$ZVM_CURSOR_BLINKING_BEAM
+}
+
 source $ZSH/oh-my-zsh.sh
-bindkey -v
-bindkey -M viins 'jk' vi-cmd-mode
-bindkey "^R" history-incremental-search-backward
 
 # Aliases
 alias sudo="sudo "
