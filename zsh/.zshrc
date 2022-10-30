@@ -13,7 +13,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Aliases
 alias sudo="sudo "
-alias vim="nvim"
 alias reboot="systemctl reboot"
 alias poweroff="systemctl poweroff"
 alias shutdown="systemctl poweroff"
