@@ -19,6 +19,10 @@ set expandtab
 set shiftwidth=4
 set tabstop=4
 
+" Cursor appearance
+let &t_SI = "\e[6 q"
+let &t_EI = "\e[2 q"
+
 " Key mappings
 let mapleader = " "
 imap jk <ESC>
