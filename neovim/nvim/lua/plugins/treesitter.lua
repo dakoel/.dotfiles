@@ -1,9 +1,25 @@
-require("nvim-treesitter.configs").setup({
-  ensure_installed = {
-    "dart",
-    "lua"
+return {
+  "nvim-treesitter/nvim-treesitter",
+  opts = {
+    highlight = { enable = true },
+    ensure_installed = {
+      "bash",
+      "c",
+      "dart",
+      "diff",
+      "html",
+      "json",
+      "jsonc",
+      "lua",
+      "luadoc",
+      "markdown",
+      "markdown_inline",
+      "python",
+      "query",
+      "regex",
+      "vim",
+      "vimdoc",
+      "yaml",
+    },
   },
-  highlight = {
-    enable = true,
-  }
-})
+}

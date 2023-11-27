@@ -1,8 +1,6 @@
-require("lualine").setup({
-  options = {
-    theme = "16color",
+return {
+  {
+    "nvim-lualine/lualine.nvim",
+    lazy = false,
   },
-  sections = {
-    lualine_x = { 'encoding' }
-  }
-})
+}
