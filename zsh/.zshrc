@@ -1,21 +1,24 @@
 # Install oh-my-zsh if not found
-if [ ! -d "$HOME/.oh-my-zsh" ]
+if [[ ! -d "$HOME/.oh-my-zsh" ]]
 then
+  export RUNZSH=no
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
 
-# Install plugins
-function install_plugin() {
-  plugin_directory="$HOME/.oh-my-zsh/plugins/$2"
-  if [ ! -d $plugin_directory ]
+# Install plugins/themes
+function install() {
+  installation_directory="$HOME/.oh-my-zsh/$3/$2"
+  if [[ ! -d $installation_directory ]]
   then
-    git clone https://github.com/$1/$2 $plugin_directory
+    git clone https://github.com/$1/$2 $installation_directory
   fi
 }
-install_plugin jeffreytse zsh-vi-mode
+
+install romkatv powerlevel10k themes
+install jeffreytse zsh-vi-mode plugins
 
 export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="lukerandall"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(git zsh-vi-mode fzf)
 
 function zvm_config() {
@@ -32,3 +35,4 @@ alias poweroff="systemctl poweroff"
 alias shutdown="systemctl poweroff"
 
 source $ZSH/oh-my-zsh.sh
+source ~/.p10k.zsh
