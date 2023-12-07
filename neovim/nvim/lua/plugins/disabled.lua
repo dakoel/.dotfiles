@@ -7,6 +7,5 @@ return {
   { "catppuccin", enabled = false },
   { "rafamadriz/friendly-snippets", enabled = false },
   { "folke/tokyonight.nvim", enabled = false },
-  { "lewis6991/gitsigns.nvim", enabled = false },
   { "dstein64/vim-startuptime", enabled = false },
 }
