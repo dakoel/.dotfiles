@@ -1,5 +1,4 @@
 -- General configuration
-vim.keymap.set("n", "<CR>", ":")
 vim.keymap.set("i", "jk", "<ESC>")
 
 -- Terminal
