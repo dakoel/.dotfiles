@@ -20,14 +20,15 @@ return {
     })
   end,
   keys = {
-    { "<Leader>ni", "<Cmd>Neorg index<CR>", mode = "n", desc = "Neorg index" },
-    { "<Leader>nt", "<Cmd>Neorg toggle-concealer<CR>", mode = "n", desc = "Neorg toggle-concealer" },
-    { "<Leader>td", "<Cmd>Neorg keybind norg core.qol.todo_items.todo.task_done<CR>", mode = "n", desc = "Task done" },
+    { "<Leader>ni", "<Cmd>Neorg index<CR>", mode = "n", desc = "index" },
+    { "<Leader>nt", "<Cmd>Neorg toggle-concealer<CR>", mode = "n", desc = "toggle-concealer" },
+    { "<Leader>nr", "<Cmd>Neorg return<CR>", mode = "n", desc = "return" },
+    { "<Leader>nd", "<Cmd>Neorg keybind norg core.qol.todo_items.todo.task_done<CR>", mode = "n", desc = "task done" },
     {
-      "<Leader>tu",
+      "<Leader>nu",
       "<Cmd>Neorg keybind norg core.qol.todo_items.todo.task_undone<CR>",
       mode = "n",
-      desc = "Task undone",
+      desc = "task undone",
     },
   },
 }
