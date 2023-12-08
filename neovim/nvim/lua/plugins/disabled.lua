@@ -9,4 +9,5 @@ return {
   { "folke/tokyonight.nvim", enabled = false },
   { "dstein64/vim-startuptime", enabled = false },
   { "echasnovski/mini.indentscope", enabled = false },
+  { "akinsho/bufferline.nvim", enabled = false },
 }
