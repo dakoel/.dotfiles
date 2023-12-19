@@ -44,6 +44,7 @@ return {
       "dart",
       "diff",
       "html",
+      "java",
       "json",
       "lua",
       "norg",
