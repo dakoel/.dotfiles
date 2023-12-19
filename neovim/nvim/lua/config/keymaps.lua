@@ -1,6 +1,8 @@
 -- General configuration
 vim.keymap.set("i", "jk", "<ESC>")
 
+vim.keymap.set("n", "<Leader><Space>", "<Cmd>Telescope find_files<CR>", { desc = "Find Files (cwd)" })
+
 -- Terminal
 vim.keymap.set("n", "<Leader>tt", "<Cmd>terminal<CR>")
 vim.keymap.set("n", "<Leader>ts", "<Cmd>split | terminal<CR>")
