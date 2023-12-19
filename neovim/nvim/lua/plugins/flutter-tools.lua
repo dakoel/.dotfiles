@@ -11,6 +11,9 @@ return {
         enabled = true,
         run_via_dap = true,
       },
+      dev_log = {
+        enabled = false,
+      },
     })
   end,
 }
