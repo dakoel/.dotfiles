@@ -33,6 +33,7 @@ alias sudo="sudo "
 alias reboot="systemctl reboot"
 alias poweroff="systemctl poweroff"
 alias shutdown="systemctl poweroff"
+alias lg="lazygit"
 
 source $ZSH/oh-my-zsh.sh
 source ~/.p10k.zsh
