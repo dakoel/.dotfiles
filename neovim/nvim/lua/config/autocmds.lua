@@ -4,7 +4,7 @@
 vim.cmd("highlight DashboardHeader guifg=#ffffff")
 
 -- Set filetype for Ansible files, necessary for ansible-language-server and ansible-lint to detect files
-vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
+vim.api.nvim_create_autocmd({ "BufEnter" }, {
   pattern = {
     "*/playbooks/*.yml",
     "*/playbooks/*.yaml",
@@ -18,7 +18,7 @@ vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
   end,
 })
 -- Also detect Ansible playbooks in root directory
-vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
+vim.api.nvim_create_autocmd({ "BufEnter" }, {
   pattern = {
     "*.yml",
     "*.yaml",
