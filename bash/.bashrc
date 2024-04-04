@@ -10,6 +10,7 @@ bind '"jk": vi-movement-mode'
 
 # Aliases
 alias l="ls -l"
+alias la="ls -l -a"
 alias lg="lazygit"
 
 if [ -f ~/.bashenv ]; then
