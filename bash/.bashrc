@@ -8,6 +8,10 @@ eval "$(starship init bash)"
 set -o vi
 bind '"jk": vi-movement-mode'
 
+# Aliases
+alias l="ll"
+alias lg="lazygit"
+
 if [ -f ~/.bashenv ]; then
 	. ~/.bashenv
 fi
