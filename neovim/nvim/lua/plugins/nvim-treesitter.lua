@@ -43,6 +43,7 @@ return {
       "bash",
       "dart",
       "diff",
+      "go",
       "html",
       "json",
       "lua",
