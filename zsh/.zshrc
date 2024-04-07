@@ -4,6 +4,8 @@ if ! which starship >/dev/null 2>&1; then
 fi
 
 export HISTFILE=~/.zsh_history
+export HISTSIZE=10000
+export SAVEHIST=10000
 
 # Key bindings
 bindkey -v
