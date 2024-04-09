@@ -25,5 +25,12 @@ autoload -Uz compinit && compinit
 alias l="ls -l"
 alias la="ls -l -a"
 alias lg="lazygit"
+nvim() {
+ if jobs | grep -q 'nvim'; then
+    fg %nvim
+ else
+    command nvim "$@"
+ fi
+}
 
 eval "$(starship init zsh)"
