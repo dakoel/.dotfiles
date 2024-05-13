@@ -4,6 +4,7 @@ if status is-interactive
     end
 
     set fish_greeting
+    set -x XDG_CONFIG_HOME $HOME/.config
 
     alias l="ls -l"
     alias la="ls -l -a"
