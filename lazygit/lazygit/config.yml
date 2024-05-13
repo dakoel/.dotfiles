@@ -10,3 +10,6 @@ gui:
 git:
   log:
     showGraph: always
+  paging:
+    colorArg: always
+    pager: delta --light --paging=never
