@@ -7,4 +7,5 @@
 /neovim/nvim/plugin/packer_compiled.lua
 /neovim/nvim/lazy-lock.json
 /neovim/nvim/lua/plugins/colorscheme.lua
+/.theme
 /tmux/.tmux.conf
