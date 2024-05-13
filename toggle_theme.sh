@@ -15,3 +15,4 @@ fi
 
 write_theme_file "./alacritty/alacritty/alacritty_${1}.toml" "./alacritty/alacritty/alacritty.toml"
 write_theme_file "./lazygit/lazygit/config_${1}.yml" "./lazygit/lazygit/config.yml"
+write_theme_file "./neovim/nvim/lua/plugins/colorscheme_${1}" "./neovim/nvim/lua/plugins/colorscheme.lua"
