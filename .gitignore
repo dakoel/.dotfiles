@@ -2,6 +2,7 @@
 /fish/fish/conf.d/*
 /fish/fish/fish_variables
 /fish/fish/functions/__sdkman-noexport-init.sh
+/lazygit/lazygit/config.yml
 /lazygit/lazygit/state.yml
 /neovim/nvim/plugin/packer_compiled.lua
 /neovim/nvim/lazy-lock.json
