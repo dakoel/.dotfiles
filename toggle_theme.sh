@@ -17,3 +17,4 @@ write_theme_file "./alacritty/alacritty/alacritty_${1}.toml" "./alacritty/alacri
 write_theme_file "./lazygit/lazygit/config_${1}.yml" "./lazygit/lazygit/config.yml"
 write_theme_file "./neovim/nvim/lua/plugins/colorscheme_${1}" "./neovim/nvim/lua/plugins/colorscheme.lua"
 write_theme_file "./tmux/.tmux_${1}.conf" "./tmux/.tmux.conf"
+tmux source-file "./tmux/.tmux.conf"
