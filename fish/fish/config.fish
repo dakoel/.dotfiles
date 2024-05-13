@@ -8,6 +8,7 @@ if status is-interactive
     alias l="ls -l"
     alias la="ls -l -a"
     alias lg="lazygit"
+    alias vim="nvim"
 
     starship init fish | source
 end
