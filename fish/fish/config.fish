@@ -9,6 +9,7 @@ if status is-interactive
     alias la="ls -l -a"
     alias lg="lazygit"
     alias vim="nvim"
+    alias tt="$HOME/.dotfiles/toggle_theme.sh"
 
     starship init fish | source
 end
