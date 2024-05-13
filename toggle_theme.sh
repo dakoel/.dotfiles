@@ -9,7 +9,7 @@ function write_theme_file() {
 	cp "$source_file" "$target_file"
 }
 
-read -r current_theme <"./.theme"
+read -r current_theme <"${dir}/.theme"
 theme=$(if [[ "$current_theme" == "dark" ]]; then echo "light"; else echo "dark"; fi)
 echo "${theme}" >"${dir}/.theme"
 write_theme_file "${dir}/alacritty/alacritty_${theme}.toml" "${dir}/alacritty/alacritty.toml"
