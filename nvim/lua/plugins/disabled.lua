@@ -8,4 +8,5 @@ return {
   { "folke/tokyonight.nvim", enabled = false },
   { "dstein64/vim-startuptime", enabled = false },
   { "echasnovski/mini.indentscope", enabled = false },
+  { "nvimdev/dashboard-nvim", enabled = false },
 }
