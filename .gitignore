@@ -1,4 +1,5 @@
 /alacritty/alacritty.toml
+/fish/config.local.fish
 /fish/conf.d/*
 /fish/fish_variables
 /fish/functions/__sdkman-noexport-init.sh
