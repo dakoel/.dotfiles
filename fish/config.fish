@@ -14,8 +14,27 @@ if status is-interactive
     alias lg="lazygit"
     alias vim="nvim"
 
-    alias tt="$HOME/.dotfiles/toggle_theme.sh"
-    alias n="mkdir -p $HOME/.notes && cd $HOME/.notes && nvim && cd -"
+    alias c="configuration"
+    alias tt="toggle_theme"
+    alias n="notes"
+
+    function configuration
+        execute_script configuration.sh
+    end
+
+    function toggle_theme
+        execute_script toggle_theme.sh
+    end
+
+    function notes
+        execute_script notes.sh
+    end
+
+    function execute_script
+        cd "$(dirname (status --current-filename))"
+        ../scripts/$argv[1]
+        cd -
+    end
 
     starship init fish | source
 end
