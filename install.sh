@@ -25,6 +25,8 @@ create_symlink $dir/fish ~/.config/fish
 create_symlink $dir/lazygit ~/.config/lazygit
 cp "${dir}/lazygit/config_${initial_theme}.yml" "${dir}/lazygit/config.yml"
 
+create_symlink $dir/lsd ~/.config/lsd
+
 create_symlink $dir/nvim ~/.config/nvim
 cp "${dir}/nvim/lua/plugins/colorscheme_${initial_theme}" "${dir}/nvim/lua/plugins/colorscheme.lua"
 

@@ -10,13 +10,11 @@ if status is-interactive
     set fish_greeting
 
     if command -q lsd
-        alias l="lsd -lh"
-        alias la="lsd -Alh"
-        alias ls="lsd"
-    else
-        alias l="ls -lh"
-        alias la="ls -Alh"
+        alias ls="lsd -g"
     end
+    alias l="ls -lh"
+    alias la="ls -Alh"
+    alias lt="ls --tree"
 
     alias lg="lazygit"
     alias vim="nvim"
