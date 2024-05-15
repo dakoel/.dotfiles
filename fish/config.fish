@@ -13,7 +13,9 @@ if status is-interactive
     alias la="ls -l -a"
     alias lg="lazygit"
     alias vim="nvim"
+
     alias tt="$HOME/.dotfiles/toggle_theme.sh"
+    alias n="mkdir -p $HOME/.notes && cd $HOME/.notes && nvim && cd -"
 
     starship init fish | source
 end
