@@ -47,7 +47,6 @@ return {
       "html",
       "json",
       "lua",
-      "norg",
       "markdown",
       "markdown_inline",
       "query",
