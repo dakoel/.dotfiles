@@ -67,19 +67,19 @@ cursor = "#7287FD"
 text = "#EFF1F5"
 
 [font.bold]
-family = "MesloLGS Nerd Font Mono"
+family = "Hack Nerd Font Mono"
 style = "Bold"
 
 [font.bold_italic]
-family = "MesloLGS Nerd Font Mono"
+family = "Hack Nerd Font Mono"
 style = "Bold Italic"
 
 [font.italic]
-family = "MesloLGS Nerd Font Mono"
+family = "Hack Nerd Font Mono"
 style = "Italic"
 
 [font.normal]
-family = "MesloLGS Nerd Font Mono"
+family = "Hack Nerd Font Mono"
 style = "Regular"
 
 [[keyboard.bindings]]
