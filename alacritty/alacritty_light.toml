@@ -89,3 +89,4 @@ mods = "Control|Shift"
 
 [window]
 opacity = 0.85
+decorations = "none"
