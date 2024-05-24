@@ -1,3 +1,21 @@
+function execute_script
+    cd "$(dirname (status --current-filename))"
+    ../scripts/$argv[1]
+    cd -
+end
+
+function configuration
+    execute_script configuration.sh
+end
+
+function toggle_theme
+    execute_script toggle_theme.sh
+end
+
+function notes
+    execute_script notes.sh
+end
+
 set local_config ~/.config/fish/config.local.fish
 test -r $local_config; and source $local_config
 set -e local_config
@@ -12,34 +30,15 @@ if status is-interactive
     if command -q lsd
         alias ls="lsd -g"
     end
+
     alias l="ls -lh"
     alias la="ls -Alh"
     alias lt="ls --tree"
-
     alias lg="lazygit"
     alias vim="nvim"
-
     alias c="configuration"
     alias tt="toggle_theme"
     alias n="notes"
-
-    function configuration
-        execute_script configuration.sh
-    end
-
-    function toggle_theme
-        execute_script toggle_theme.sh
-    end
-
-    function notes
-        execute_script notes.sh
-    end
-
-    function execute_script
-        cd "$(dirname (status --current-filename))"
-        ../scripts/$argv[1]
-        cd -
-    end
 
     starship init fish | source
 end

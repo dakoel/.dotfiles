@@ -1,4 +1,5 @@
 /alacritty/alacritty.toml
+/fish/completions/asdf.fish
 /fish/config.local.fish
 /fish/conf.d/*
 /fish/fish_variables
