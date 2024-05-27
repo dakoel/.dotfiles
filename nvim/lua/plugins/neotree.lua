@@ -24,4 +24,11 @@ return {
       },
     }
   end,
+  keys = {
+    {
+      "<Leader>n",
+      "<Cmd>Neotree " .. vim.env.NOTES_PATH .. "<CR>",
+      desc = "Explorer NeoTree (Notes)",
+    },
+  },
 }

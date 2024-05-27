@@ -3,14 +3,14 @@ return {
   dependencies = { "nvim-neotest/nvim-nio" },
   keys = {
     {
-      "<leader>du",
+      "<Leader>du",
       function()
         require("dapui").toggle({})
       end,
       desc = "Dap UI",
     },
     {
-      "<leader>de",
+      "<Leader>de",
       function()
         require("dapui").eval()
       end,
