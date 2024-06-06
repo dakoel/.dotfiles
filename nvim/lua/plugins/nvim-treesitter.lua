@@ -1,9 +1,9 @@
-require("nvim-treesitter.install").prefer_git = true
 return {
   "nvim-treesitter/nvim-treesitter",
   version = false,
   build = ":TSUpdate",
-  event = { "LazyFile", "VeryLazy" },
+  event = { "VeryLazy" },
+  cmd = { "TSUpdateSync", "TSUpdate", "TSInstall" },
   init = function(plugin)
     require("lazy.core.loader").add_to_rtp(plugin)
     require("nvim-treesitter.query_predicates")
@@ -32,11 +32,6 @@ return {
         end
       end,
     },
-  },
-  cmd = { "TSUpdateSync", "TSUpdate", "TSInstall" },
-  keys = {
-    { "<c-space>", desc = "Increment selection" },
-    { "<bs>", desc = "Decrement selection", mode = "x" },
   },
   opts = {
     ensure_installed = {

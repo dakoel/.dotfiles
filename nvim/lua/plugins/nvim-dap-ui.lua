@@ -1,33 +1,22 @@
 return {
   "rcarriga/nvim-dap-ui",
   dependencies = { "nvim-neotest/nvim-nio" },
-  keys = {
-    {
-      "<Leader>du",
-      function()
-        require("dapui").toggle({})
-      end,
-      desc = "Dap UI",
-    },
-    {
-      "<Leader>de",
-      function()
-        require("dapui").eval()
-      end,
-      desc = "Eval",
-      mode = { "n", "v" },
-    },
-  },
   opts = {
     layouts = {
       {
         elements = {
-          { id = "repl", size = 0.5 },
-          { id = "breakpoints", size = 0.25 },
-          { id = "scopes", size = 0.25 },
+          { id = "repl", size= 1.0 },
         },
-        size = 40,
+        size = 20,
         position = "bottom",
+      },
+      {
+        elements = {
+          { id = "breakpoints", size = 0.5 },
+          { id = "scopes", size = 0.5 },
+        },
+        size = 60,
+        position = "right",
       },
     },
   },
@@ -38,11 +27,17 @@ return {
     dap.listeners.after.event_initialized["dapui_config"] = function()
       dapui.open({})
     end
-    dap.listeners.before.event_terminated["dapui_config"] = function()
-      dapui.close({})
-    end
     dap.listeners.before.event_exited["dapui_config"] = function()
       dapui.close({})
     end
   end,
+  keys = {
+    {
+      "<Leader>du",
+      function()
+        require("dapui").toggle({})
+      end,
+      desc = "Dap UI",
+    },
+  },
 }

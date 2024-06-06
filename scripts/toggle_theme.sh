@@ -19,12 +19,12 @@ echo "${theme}" >"${dir}/../.theme"
 # Set new theme for CLI applications
 write_theme_file "${dir}/../alacritty/alacritty_${theme}.toml" "${dir}/../alacritty/alacritty.toml"
 write_theme_file "${dir}/../lazygit/config_${theme}.yml" "${dir}/../lazygit/config.yml"
-write_theme_file "${dir}/../nvim/lua/plugins/colorscheme_${theme}" "${dir}/../nvim/lua/plugins/colorscheme.lua"
+write_theme_file "${dir}/../nvim/lua/config/colorscheme_${theme}" "${dir}/../nvim/lua/config/colorscheme.lua"
 write_theme_file "${dir}/../tmux/tmux_${theme}.conf" "${dir}/../tmux/.tmux.conf"
 tmux source-file "${dir}/../tmux/.tmux.conf"
 
 # Set new theme for gnome
-if command -v gsettings &>/dev/null; then
+if command -v gsettings &>/dev/null && [ "$(uname)" != "Darwin" ]; then
 	gsettings set org.gnome.desktop.interface color-scheme ${gnome_theme}
 fi
 

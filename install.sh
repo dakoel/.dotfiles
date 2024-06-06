@@ -28,7 +28,7 @@ cp "${dir}/lazygit/config_${initial_theme}.yml" "${dir}/lazygit/config.yml"
 create_symlink $dir/lsd ~/.config/lsd
 
 create_symlink $dir/nvim ~/.config/nvim
-cp "${dir}/nvim/lua/plugins/colorscheme_${initial_theme}" "${dir}/nvim/lua/plugins/colorscheme.lua"
+cp "${dir}/nvim/lua/config/colorscheme_${initial_theme}" "${dir}/nvim/lua/config/colorscheme.lua"
 
 create_symlink $dir/tmux/.tmux.conf ~/.tmux.conf
 cp $dir/tmux/tmux_light.conf $dir/tmux/.tmux.conf
