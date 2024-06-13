@@ -4,4 +4,5 @@ function fish_user_key_bindings
     bind -M default q exit
     bind -M default \ca "commandline -f accept-autosuggestion execute"
     bind -M insert \ca "commandline -f accept-autosuggestion execute"
+    bind -M insert \cr history-pager
 end
