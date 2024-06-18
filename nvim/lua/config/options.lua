@@ -78,7 +78,7 @@ local function load_project_specific_settings()
     file_handle:close()
 
     local success, err = pcall(function()
-      return loadstring(contents)()
+      return load(contents)()
     end)
 
     if not success then

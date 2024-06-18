@@ -5,6 +5,7 @@ vim.keymap.set("n", "<Leader>bd", "<Cmd>bd<CR>", { desc = "Delete buffer" })
 
 -- Prefix descriptions
 vim.keymap.set("n", "<Leader>b", "", { desc = "+buffer" })
+vim.keymap.set("n", "<Leader>c", "", { desc = "+code" })
 vim.keymap.set("n", "<Leader>d", "", { desc = "+debug" })
 vim.keymap.set("n", "<Leader>g", "", { desc = "+git" })
 vim.keymap.set("n", "<Leader>n", "", { desc = "+noice" })
