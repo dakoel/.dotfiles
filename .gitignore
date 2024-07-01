@@ -8,6 +8,6 @@
 /lazygit/state.yml
 /nvim/plugin/packer_compiled.lua
 /nvim/lazy-lock.json
-/nvim/lua/plugins/colorscheme.lua
+/nvim/lua/config/colorscheme.lua
 /.theme
 /tmux/.tmux.conf
