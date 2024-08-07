@@ -7,7 +7,7 @@ Dotfile repository for my workflow tools.
 - [Alacritty](https://alacritty.org/) >= **0.13.2**
 - [fish](https://fishshell.com/) >= **3.7.0**
 - [Git](https://git-scm.com/) >= **2.45.0**
-- [Hack Nerd Font](https://www.nerdfonts.com/) >= **3.003**
+- [JetBrainsMono Nerd Font](https://www.nerdfonts.com/) >= **3.003**
 - [lazygit](https://github.com/jesseduffield/lazygit) >= **2.45.0**
 - [LSD](https://github.com/lsd-rs/lsd) >= **1.1.2**
 - [Neovim](https://neovim.io/) >= **0.9.5**
