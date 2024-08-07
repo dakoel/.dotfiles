@@ -27,15 +27,21 @@ if status is-interactive
 
     set fish_greeting
 
+    # ls aliases
     if command -q lsd
         alias ls="lsd -g"
     end
-
     alias l="ls -lh"
     alias la="ls -Alh"
     alias lt="ls --tree"
+
+    # application aliases
+    alias k="kubectl"
     alias lg="lazygit"
+    alias m="multipass"
     alias vim="nvim"
+
+    # other aliases
     alias c="configuration"
     alias tt="toggle_theme"
     alias n="notes"
