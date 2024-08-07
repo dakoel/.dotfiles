@@ -1,6 +1,6 @@
 function execute_script
     cd "$(dirname (status --current-filename))"
-    ../scripts/$argv[1]
+    ../scripts/$argv[1] $argv[2..]
     cd -
 end
 
@@ -9,7 +9,7 @@ function configuration
 end
 
 function toggle_theme
-    execute_script toggle_theme.sh
+    execute_script toggle_theme.sh $argv[1..]
 end
 
 function notes
