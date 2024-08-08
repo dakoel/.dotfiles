@@ -22,12 +22,18 @@ return {
     layouts = {
       {
         elements = {
-          { id = "repl", size = 0.5 },
-          { id = "breakpoints", size = 0.25 },
-          { id = "scopes", size = 0.25 },
+          { id = "repl" },
         },
-        size = 40,
+        size = 30,
         position = "bottom",
+      },
+      {
+        elements = {
+          { id = "breakpoints", size = 0.4 },
+          { id = "scopes", size = 0.5 },
+        },
+        size = 70,
+        position = "right",
       },
     },
   },
