@@ -13,6 +13,3 @@ for i = string.byte("a"), string.byte("z") do
   )
 end
 vim.keymap.set("n", "dm<Leader>", "<Cmd>delmark a-z A-Z<CR>", { desc = "Delete all marks" })
-
--- Telescope
-vim.keymap.set("n", "<Leader><Space>", "<Cmd>Telescope find_files<CR>", { desc = "Find Files (cwd)" })
